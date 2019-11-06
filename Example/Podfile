@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BuildMode_Example' do
+  pod 'BuildMode', :path => '../'
+
+  target 'BuildMode_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
