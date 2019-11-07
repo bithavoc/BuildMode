@@ -60,10 +60,10 @@ public func ProvisioningProfileFrom(bundle: Bundle = Bundle.main) -> Provisionin
   guard let plistData = plistText.data(using: .isoLatin1) else {
     return nil
   }
-  guard let plist = try? PropertyListSerialization.propertyList(from: plistData, format: nil) as! [String:Any] else {
-    return nil
-  }
-  print("plist", plist)
+//  guard let plist = try? PropertyListSerialization.propertyList(from: plistData, format: nil) as! [String:Any] else {
+//    return nil
+//  }
+//  print("plist", plist)
   let profile = try! PropertyListDecoder().decode(ProvisioningProfile.self, from: plistData)
   return profile
 }

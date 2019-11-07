@@ -9,11 +9,11 @@
 Pod::Spec.new do |s|
   s.name             = 'BuildMode'
   s.version          = '0.1.0'
-  s.summary          = 'Indicates whether the iOS Build is simulator, debuggable, enterprise or distribution build. It also indicates whether the build should use sandbox or production services from Apple'
+  s.summary          = 'Provides info about the iOS app for simulator, debuggable, enterprise or distribution builds to use sandbox or production cloud from Apple'
   s.swift_versions   = '5'
   s.description      = <<-DESC
 Parses the provisioning profile and entitlements from the main bundle and uses un-official heuristics to determine whether a build is for simulator, debuggable, enterprise or distribution.
-This helps determine when the app should use sandbox or production services from Apple in the server-side.
+This helps determine when the app should use sandbox or production cloud services from Apple in the server-side.
                        DESC
 
   s.homepage         = 'https://github.com/bithavoc/BuildMode'

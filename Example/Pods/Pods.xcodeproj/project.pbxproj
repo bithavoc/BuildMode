@@ -96,7 +96,6 @@
 		71A043418AD76C449EE6699D0C26B419 /* BuildMode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BuildMode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7357F96EE9725EA2EA52A6915FCF2B22 /* Pods-BuildMode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BuildMode_Example.release.xcconfig"; sourceTree = "<group>"; };
 		746CC9C9E1B0E104CD1BA120C69A2526 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		7605A620237373FB00233055 /* Ref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ref.m; sourceTree = "<group>"; };
 		7605A62223737E0700233055 /* ProvisioningProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProvisioningProfile.swift; path = BuildMode/Classes/ProvisioningProfile.swift; sourceTree = "<group>"; };
 		7605A62423737F8C00233055 /* Entitlements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Entitlements.swift; path = BuildMode/Classes/Entitlements.swift; sourceTree = "<group>"; };
 		7605A6262373953600233055 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = BuildMode/Classes/Environment.swift; sourceTree = "<group>"; };
@@ -182,7 +181,6 @@
 		2F02FF6FB4D00782421E332CFE8591DA /* BuildMode */ = {
 			isa = PBXGroup;
 			children = (
-				7605A620237373FB00233055 /* Ref.m */,
 				783A705D775D88DDF908C936C4BDA992 /* BuildMode.swift */,
 				7605A62223737E0700233055 /* ProvisioningProfile.swift */,
 				7605A62423737F8C00233055 /* Entitlements.swift */,
