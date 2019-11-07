@@ -9,16 +9,11 @@
 Pod::Spec.new do |s|
   s.name             = 'BuildMode'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BuildMode.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Indicates whether the iOS Build is simulator, debuggable, enterprise or distribution build. It also indicates whether the build should use sandbox or production services from Apple'
+  s.swift_versions   = '5'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Parses the provisioning profile and entitlements from the main bundle and uses un-official heuristics to determine whether a build is for simulator, debuggable, enterprise or distribution.
+This helps determine when the app should use sandbox or production services from Apple in the server-side.
                        DESC
 
   s.homepage         = 'https://github.com/bithavoc/BuildMode'
@@ -26,17 +21,9 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bithavoc' => 'im@bithavoc.io' }
   s.source           = { :git => 'https://github.com/bithavoc/BuildMode.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/bithavoc'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'BuildMode/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'BuildMode' => ['BuildMode/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

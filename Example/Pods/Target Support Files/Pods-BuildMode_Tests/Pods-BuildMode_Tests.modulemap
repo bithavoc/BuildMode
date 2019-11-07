@@ -1,0 +1,6 @@
+framework module Pods_BuildMode_Tests {
+  umbrella header "Pods-BuildMode_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
